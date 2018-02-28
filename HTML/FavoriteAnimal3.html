@@ -8,15 +8,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
  </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="container" >
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">About the Booby</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Section 3</a>
+    </li>
+    </div>
+    <br>
+    <br>
+    <br>
    <center>
-       <div class="container">
+       <div class="container" id="section1" >
   <button type="button" class="btn btn-dark"> <a href="https://cbfink.github.io/ecs21718/HTML/table1.html">Table1</a></button>
   <button type="button" class="btn btn-dark"> <a href="https://cbfink.github.io/ecs21718/HTML/FavoriteAnimal.html">FavoriteAnimal1</a></button>
   <button type="button" class="btn btn-dark"> <a href="https://cbfink.github.io/ecs21718/HTML/practice1.html">Practice1</a></button>
    </div>
-   <div class="jumbotron jumbotron-fluid" style="color:blue; background-color:black">
+   <div class="jumbotron jumbotron-fluid" style="color:blue; background-color:black" >
   <div class="container">
     <h1>Blue-Footed Booby</h1>
       <p>Sula Nebouxii</p>
@@ -35,7 +58,7 @@
     </li>
   </ul>
 </nav>
-     <div class="row">
+     <div class="row" id="section2">
      <div class="col" style="background-color:Turquoise;"><img src="https://static01.nyt.com/images/2017/03/07/science/07BOOBIESJP2/07BOOBIESJP2-articleLarge-v3.jpg" class="img-thumbnail" alt="Blue-Footed Booby" width=200px >
        <p>Blue-Footed Boobies are called Blue-Footed Boobies because of their two blue feet.</p>
      </div>
@@ -51,5 +74,42 @@
      Blue-Footed Boobies have briliant blue feet that they often use in mating rituals, however they are not the smartest birds. Boobies would often land on ships where hungry sailors would easily grab them and eat them.
   </div>
 </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div id="section3" ></div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://allyouneedisbiology.files.wordpress.com/2017/05/portada_asahi-shimbum-via-getty-images.jpg?w=1038&h=576&crop=1" alt="Big Boobies" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="http://1.bp.blogspot.com/-rhYSZuaN-io/VgedE_8bN5I/AAAAAAAAEYU/8jEkEvvcv_s/s1600/2.jpg" alt="Funny Booby" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static1.squarespace.com/static/5388e453e4b0813d343199fc/t/57e984f66a49639b6e498741/1474921743613/blue+footed+boobies" alt="Dancing Booby" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.detourdestinations.com/wp-content/uploads/2013/03/bluefootedboobie-dance-800x532.jpg" alt="Booby" width="1100" height="500">
+    </div>
+  </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
   </body>
  </html>
+ 
